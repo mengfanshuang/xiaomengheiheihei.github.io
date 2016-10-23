@@ -7,25 +7,28 @@
     <title>CSS使元素水平垂直居中的方法总结 | 一只安静的代码撸er~</title>
     <base href="https://dwqs.github.io" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="方法一：
-兼容主流浏览器，除了IE6
+    <meta name="description" content="方法一：兼容主流浏览器，除了IE6
 position加margin的方式，废话不多说，直接上代码
-    .wrap{    width: 200px;    height: 200px;    background-color: red;    position: relative;}.center{    width: 100px;    height: 100px;    position">
+
+123&amp;lt;div class=&amp;quot;wrap&amp;quot;&amp;gt;	&amp;lt;div class=&amp;quot;center&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+1234567891011121314151617.wrap&amp;#123;	width: 200px;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS使元素水平垂直居中的方法总结">
 <meta property="og:url" content="http://yoursite.com/2016/10/23/CSS使元素水平垂直居中的方法总结/index.html">
 <meta property="og:site_name" content="一只安静的代码撸er~">
-<meta property="og:description" content="方法一：
-兼容主流浏览器，除了IE6
+<meta property="og:description" content="方法一：兼容主流浏览器，除了IE6
 position加margin的方式，废话不多说，直接上代码
-    .wrap{    width: 200px;    height: 200px;    background-color: red;    position: relative;}.center{    width: 100px;    height: 100px;    position">
-<meta property="og:updated_time" content="2016-10-23T05:49:42.443Z">
+
+123&amp;lt;div class=&amp;quot;wrap&amp;quot;&amp;gt;	&amp;lt;div class=&amp;quot;center&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+1234567891011121314151617.wrap&amp;#123;	width: 200px;">
+<meta property="og:updated_time" content="2016-10-23T06:07:22.018Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS使元素水平垂直居中的方法总结">
-<meta name="twitter:description" content="方法一：
-兼容主流浏览器，除了IE6
+<meta name="twitter:description" content="方法一：兼容主流浏览器，除了IE6
 position加margin的方式，废话不多说，直接上代码
-    .wrap{    width: 200px;    height: 200px;    background-color: red;    position: relative;}.center{    width: 100px;    height: 100px;    position">
+
+123&amp;lt;div class=&amp;quot;wrap&amp;quot;&amp;gt;	&amp;lt;div class=&amp;quot;center&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+1234567891011121314151617.wrap&amp;#123;	width: 200px;">
     
     
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -109,15 +112,25 @@ position加margin的方式，废话不多说，直接上代码
         
         <div class="article-entry" itemprop="articleBody">
             
-                <p>方法一：</p>
-<p>兼容主流浏览器，除了IE6</p>
+                <h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><h4 id="兼容主流浏览器，除了IE6"><a href="#兼容主流浏览器，除了IE6" class="headerlink" title="兼容主流浏览器，除了IE6"></a>兼容主流浏览器，除了IE6</h4><blockquote>
 <p>position加margin的方式，废话不多说，直接上代码</p>
-<p><div class="wrap"><br>    <div class="center"></div><br></div><br>.wrap{<br>    width: 200px;<br>    height: 200px;<br>    background-color: red;<br>    position: relative;<br>}<br>.center{<br>    width: 100px;<br>    height: 100px;<br>    position: absolute;<br>    top: 0;<br>    left: 0;<br>    bottom: 0;<br>    right: 0;<br>    margin: auto;<br>    background-color: green;<br>}<br>第一次是看别人这么写的，第一眼我是懵逼的，这也行？试了试果真可以，但是为什么可以呢？我本着啥都刨根问底的精神研究了一阵子也没研究出个啥来，这里有篇知乎的帖子有说，不过我能明白个大概，讲不清楚，这就很尴尬了。链接：<br><a href="http://www.zhihu.com/question/35113393" target="_blank" rel="external">http://www.zhihu.com/question/35113393</a><br>方法二</p>
-<p>兼容主流浏览器，除了IE6/7</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;wrap&quot;&gt;</div><div class="line">	&lt;div class=&quot;center&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">.wrap&#123;</div><div class="line">	width: 200px;</div><div class="line">	height: 200px;</div><div class="line">	background-color: red;</div><div class="line">	position: relative;</div><div class="line">&#125;</div><div class="line">.center&#123;</div><div class="line">	width: 100px;</div><div class="line">	height: 100px;</div><div class="line">	position: absolute;</div><div class="line">	top: 0;</div><div class="line">	left: 0;</div><div class="line">	bottom: 0;</div><div class="line">	right: 0;</div><div class="line">	margin: auto;</div><div class="line">	background-color: green;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>第一次是看别人这么写的，第一眼我是懵逼的，这也行？试了试果真可以，但是为什么可以呢？我本着啥都刨根问底的精神研究了一阵子也没研究出个啥来，这里有篇知乎的帖子有说，不过我能明白个大概，讲不清楚，这就很尴尬了。链接：<br><a href="http://www.zhihu.com/question/35113393" target="_blank" rel="external">http://www.zhihu.com/question/35113393</a></p>
+</blockquote>
+<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3><h4 id="兼容主流浏览器，除了IE6-7"><a href="#兼容主流浏览器，除了IE6-7" class="headerlink" title="兼容主流浏览器，除了IE6/7"></a>兼容主流浏览器，除了IE6/7</h4><blockquote>
 <p>display:table-cell;</p>
-<p><div class="wrap"><br>    <div class="center"></div><br></div><br>.wrap{<br>    width: 200px;<br>    height: 200px;<br>    background-color: red;<br>    display: table-cell;<br>    vertical-align: middle;<br>    text-align: center;<br>}<br>.center{<br>    width: 100px;<br>    height: 100px;<br>    vertical-align: middle;<br>    display: inline-block;<br>    background-color: green;<br>}<br>这种方法其实重点在于vertical-align这个属性。（设置或检索内联元素在行框内的垂直对其方式。）对wrap这个div做diaplay：table-cell处理使之变成行框，然后center这个div转化为行内快，梳理成长的也就居中了。<br>方法三</p>
-<p>不支持IE9及以下</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;wrap&quot;&gt;</div><div class="line">	&lt;div class=&quot;center&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">.wrap&#123;</div><div class="line">	width: 200px;</div><div class="line">	height: 200px;</div><div class="line">	background-color: red;</div><div class="line">	display: table-cell;</div><div class="line">	vertical-align: middle;</div><div class="line">	text-align: center;</div><div class="line">&#125;</div><div class="line">.center&#123;</div><div class="line">	width: 100px;</div><div class="line">	height: 100px;</div><div class="line">	vertical-align: middle;</div><div class="line">	display: inline-block;</div><div class="line">	background-color: green;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>这种方法其实重点在于vertical-align这个属性。（设置或检索内联元素在行框内的垂直对其方式。）对wrap这个div做diaplay：table-cell处理使之变成行框，然后center这个div转化为行内快，梳理成长的也就居中了。</p>
+</blockquote>
+<h3 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h3><h4 id="不支持IE9及以下"><a href="#不支持IE9及以下" class="headerlink" title="不支持IE9及以下"></a>不支持IE9及以下</h4><blockquote>
 <p>position加transform</p>
+</blockquote>
 
             
         </div>
