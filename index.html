@@ -78,6 +78,81 @@
     <div class="outer">
       <section id="main">
   
+    <article id="post-CSS使元素水平垂直居中的方法总结" class="article article-type-post" itemscope
+         itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/23/CSS使元素水平垂直居中的方法总结/">CSS使元素水平垂直居中的方法总结</a>
+    </h1>
+  
+
+                <div class="article-meta">
+                    <a href="/2016/10/23/CSS使元素水平垂直居中的方法总结/" class="article-date">
+  <time datetime="2016-10-23T05:43:47.000Z" itemprop="datePublished">2016-10-23</time>
+</a>
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+                <p>方法一：</p>
+<p>兼容主流浏览器，除了IE6</p>
+<p>position加margin的方式，废话不多说，直接上代码</p>
+<p><div class="wrap"><br>    <div class="center"></div><br></div><br>.wrap{<br>    width: 200px;<br>    height: 200px;<br>    background-color: red;<br>    position: relative;<br>}<br>.center{<br>    width: 100px;<br>    height: 100px;<br>    position: absolute;<br>    top: 0;<br>    left: 0;<br>    bottom: 0;<br>    right: 0;<br>    margin: auto;<br>    background-color: green;<br>}<br>第一次是看别人这么写的，第一眼我是懵逼的，这也行？试了试果真可以，但是为什么可以呢？我本着啥都刨根问底的精神研究了一阵子也没研究出个啥来，这里有篇知乎的帖子有说，不过我能明白个大概，讲不清楚，这就很尴尬了。链接：<br><a href="http://www.zhihu.com/question/35113393" target="_blank" rel="external">http://www.zhihu.com/question/35113393</a><br>方法二</p>
+<p>兼容主流浏览器，除了IE6/7</p>
+<p>display:table-cell;</p>
+<p><div class="wrap"><br>    <div class="center"></div><br></div><br>.wrap{<br>    width: 200px;<br>    height: 200px;<br>    background-color: red;<br>    display: table-cell;<br>    vertical-align: middle;<br>    text-align: center;<br>}<br>.center{<br>    width: 100px;<br>    height: 100px;<br>    vertical-align: middle;<br>    display: inline-block;<br>    background-color: green;<br>}<br>这种方法其实重点在于vertical-align这个属性。（设置或检索内联元素在行框内的垂直对其方式。）对wrap这个div做diaplay：table-cell处理使之变成行框，然后center这个div转化为行内快，梳理成长的也就居中了。<br>方法三</p>
+<p>不支持IE9及以下</p>
+<p>position加transform</p>
+
+            
+        </div>
+        
+    </div>
+    
+</article>
+
+
+  
+    <article id="post-第一篇笔记" class="article article-type-post" itemscope
+         itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/23/第一篇笔记/">第一篇笔记</a>
+    </h1>
+  
+
+                <div class="article-meta">
+                    <a href="/2016/10/23/第一篇笔记/" class="article-date">
+  <time datetime="2016-10-23T05:42:22.000Z" itemprop="datePublished">2016-10-23</time>
+</a>
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+                
+            
+        </div>
+        
+    </div>
+    
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope
          itemprop="blogPost">
     <div class="article-inner">
@@ -128,12 +203,19 @@
     
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -143,6 +225,14 @@
     <h3 class="widget-title">近期文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/10/23/CSS使元素水平垂直居中的方法总结/">CSS使元素水平垂直居中的方法总结</a>
+          </li>
+        
+          <li>
+            <a href="/2016/10/23/第一篇笔记/">第一篇笔记</a>
+          </li>
         
           <li>
             <a href="/2016/10/21/hello-world/">Hello World</a>
