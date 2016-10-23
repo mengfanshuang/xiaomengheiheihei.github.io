@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>jQuery核心及选择器 | 一只安静的代码撸er~</title>
+    <base href="https://dwqs.github.io" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="jQuery核心$ 和jQuery和window.jQuery都是一个对象，通常我们使用$符号表示jQuery对象
+
+
+jQuery中的onload事件1234567$(document).ready(function () &amp;#123;&amp;#125;);//更简单的写法$(function () &amp;#123;&amp;#125;);">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jQuery核心及选择器">
+<meta property="og:url" content="http://yoursite.com/2016/10/23/jQuery核心及选择器/index.html">
+<meta property="og:site_name" content="一只安静的代码撸er~">
+<meta property="og:description" content="jQuery核心$ 和jQuery和window.jQuery都是一个对象，通常我们使用$符号表示jQuery对象
+
+
+jQuery中的onload事件1234567$(document).ready(function () &amp;#123;&amp;#125;);//更简单的写法$(function () &amp;#123;&amp;#125;);">
+<meta property="og:updated_time" content="2016-10-23T06:23:42.108Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="jQuery核心及选择器">
+<meta name="twitter:description" content="jQuery核心$ 和jQuery和window.jQuery都是一个对象，通常我们使用$符号表示jQuery对象
+
+
+jQuery中的onload事件1234567$(document).ready(function () &amp;#123;&amp;#125;);//更简单的写法$(function () &amp;#123;&amp;#125;);">
+    
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+    <span id="forkongithub">
+        <a href="https://github.com/dwqs/nx">Fork me on GitHub</a>
+    </span>
+    <div id="banner"></div>
+    <div id="header-outer" class="outer">
+        <div id="header-title" class="inner">
+            <h1 id="logo-wrap">
+                <a href="/" id="logo">一只安静的代码撸er~</a>
+            </h1>
+            
+            <h2 id="subtitle-wrap">
+                <span href="/" id="subtitle">欢迎来到我的博客！</span>
+            </h2>
+            
+        </div>
+        <div id="header-inner" class="inner">
+            <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                
+                <a class="main-nav-link" href="/">Home
+                    <i class="fa fa-home "></i>
+                </a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <a id="nav-search-btn" title="Search">
+                    <i class="fa fa-search"></i>
+                </a>
+            </nav>
+            <div id="search-form-wrap">
+                <form action="https://www.google.com.hk/search" method="get" accept-charset="utf-8" class="search-form" target="_blank">
+                    <input name="q" type=hidden value="site:dwqs.github.io">
+                    <input type="search" name="q" maxlength="20" class="search-form-input" placeholder="Search">
+                    <input type="submit" value="" class="search-form-submit">
+                    <input name="sourceid" type=hidden value="chrome">
+                    <input name="aqs" type="hidden" value="chrome..69i57.2732j0j9">
+                    <input name="es_sm" type=hidden value="91">
+                    <input name="ie" type=hidden value="UTF-8">
+                    <input type="hidden" name="si" value="yoursite.com">
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="outer">
+      <section id="main"><article id="post-jQuery核心及选择器" class="article article-type-post" itemscope
+         itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+  
+    <h1 class="article-title" itemprop="name">
+      jQuery核心及选择器
+    </h1>
+  
+
+                <div class="article-meta">
+                    <a href="/2016/10/23/jQuery核心及选择器/" class="article-date">
+  <time datetime="2016-10-23T06:19:24.000Z" itemprop="datePublished">2016-10-23</time>
+</a>
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+                <h2 id="jQuery核心"><a href="#jQuery核心" class="headerlink" title="jQuery核心"></a>jQuery核心</h2><p>$ 和jQuery和window.jQuery都是一个对象，通常我们使用$符号表示jQuery对象</p>
+<blockquote>
+<ul>
+<li>jQuery中的onload事件<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$(document).ready(function () &#123;</div><div class="line"></div><div class="line">&#125;);</div><div class="line">//更简单的写法</div><div class="line">$(function () &#123;</div><div class="line"></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<a id="more"></a>
+<blockquote>
+<ul>
+<li><p>通过jQuery获取元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//示例：</div><div class="line">var divJq = $(&apos;.div1&apos;);</div><div class="line">    console.log(divJq);</div><div class="line">//这里获取的对象为jQuery对象，只能应用jQuery方法</div></pre></td></tr></table></figure>
+</li>
+<li><p>把jQuery对象转化为原生对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//示例：</div><div class="line">//两种写法都可以，一般使用get方法</div><div class="line">var divChange = divJq[0];</div><div class="line">var divChange1 = divJq.get(0);</div></pre></td></tr></table></figure>
+</li>
+<li><p>jQuery常用工具类</p>
+<h5 id="1、-type操作符判断一个数据的详细类型"><a href="#1、-type操作符判断一个数据的详细类型" class="headerlink" title="1、$.type操作符判断一个数据的详细类型"></a>1、$.type操作符判断一个数据的详细类型</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//在原生typeof操作符的基础上封装的更加实用，可以更加准确的判断数据类型，</div><div class="line">//例如：</div><div class="line">    console.log($.type([]));    //array</div><div class="line">    console.log($.type(&#123;&#125;));    //object</div><div class="line">	console.log($.type(new Date()));    //date</div><div class="line">    //原生JS</div><div class="line">    console.log(typeof []);				//object</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h5 id="2、-each-遍历方法"><a href="#2、-each-遍历方法" class="headerlink" title="2、$.each()遍历方法"></a>2、$.each()遍历方法</h5><p>这个方法接受两个参数：<br>参数一：需要遍历的数组或者对象<br>参数二：一个函数，函数包括两个参数key(index)和value<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//示例：遍历一个数组</div><div class="line">$.each([10,20,30,40,50], function (index, value) &#123;</div><div class="line">	  console.log(index + &quot;--&gt;&quot; + value);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<h5 id="3、-trim-去字符串除最前边和最后面的空格"><a href="#3、-trim-去字符串除最前边和最后面的空格" class="headerlink" title="3、$.trim()去字符串除最前边和最后面的空格"></a>3、$.trim()去字符串除最前边和最后面的空格</h5><p>接受一个参数：一个字符串<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">//示例：</div><div class="line">var res = $.trim (&quot;  兄弟，慢点，疼   &quot;);</div><div class="line">console.log(res);			//兄弟，慢点，疼</div></pre></td></tr></table></figure></p>
+<h2 id="jQuery选择器"><a href="#jQuery选择器" class="headerlink" title="jQuery选择器"></a>jQuery选择器</h2><h5 id="一、-jQuery完美支持css所有选择器，也就是能用css写出来的选择器直接扔到jQuery里就能用来获取指定元素。其中包括："><a href="#一、-jQuery完美支持css所有选择器，也就是能用css写出来的选择器直接扔到jQuery里就能用来获取指定元素。其中包括：" class="headerlink" title="一、 jQuery完美支持css所有选择器，也就是能用css写出来的选择器直接扔到jQuery里就能用来获取指定元素。其中包括："></a>一、 jQuery完美支持css所有选择器，也就是能用css写出来的选择器直接扔到jQuery里就能用来获取指定元素。其中包括：</h5><blockquote>
+<ul>
+<li>ID选择器</li>
+<li>类选择器</li>
+<li>标签选择器</li>
+<li>群组选择器</li>
+<li>后代选择器</li>
+<li>子集选择器</li>
+<li>通配符选择器</li>
+<li>属性选择器</li>
+<li>结构伪类选择器<h5 id="二、-jQuery高级选择器"><a href="#二、-jQuery高级选择器" class="headerlink" title="二、 jQuery高级选择器"></a>二、 jQuery高级选择器</h5></li>
+<li>find()查找子集中某个标签，如果需要查找多个中间用逗号,隔开<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">//示例：</div><div class="line">var someChild = $(&apos;.container&apos;).find(&apos;h2, header, footer&apos;);</div><div class="line">console.log(someChild);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<p>//示例：</p>
+<blockquote>
+<ul>
+<li><p>children()获取所有直接子元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">//示例：</div><div class="line">var children = $(&apos;article&apos;).children();</div><div class="line">console.log(children);		//获取article下的所有子标签</div></pre></td></tr></table></figure>
+</li>
+<li><p>parent()获取直接父级元素 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">//示例：</div><div class="line">var parentElement =$(&apos;h2&apos;).parent();</div><div class="line">console.log(parentElement);</div></pre></td></tr></table></figure>
+</li>
+<li><p>parents()获取所有祖先元素，一直到html</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">//示例：</div><div class="line">var allParent = $(&apos;h3&apos;).parents();</div><div class="line">console.log(allParent);</div></pre></td></tr></table></figure>
+</li>
+<li><p>对兄弟节点的操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">//获取下一个兄弟元素</div><div class="line">var nextElement = $(&apos;header&apos;).next();</div><div class="line">console.log(nextElement);</div><div class="line"></div><div class="line">//获取下面所有兄弟元素</div><div class="line">var nextElements = $(&apos;h2&apos;).nextAll();</div><div class="line">console.log(nextElements);</div><div class="line"></div><div class="line">//获取上一个兄弟元素</div><div class="line">var previousElement = $(&apos;footer&apos;).prev();</div><div class="line">console.log(previousElement);</div><div class="line"></div><div class="line">//获取上面所有兄弟元素</div><div class="line">var previousElements = $(&apos;footer&apos;).prevAll();</div><div class="line">console.log(previousElements);</div><div class="line"></div><div class="line">//获取所有兄弟元素</div><div class="line">var brotherElements = $(&apos;h4&apos;).siblings();</div><div class="line">console.log(brotherElements);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h5 id="三、-jQuery过滤选择器"><a href="#三、-jQuery过滤选择器" class="headerlink" title="三、 jQuery过滤选择器"></a>三、 jQuery过滤选择器</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">console.log(&quot;-------- 基本过滤选择器 ---------&quot;);</div><div class="line">//指定选中的元素，下标从0开始</div><div class="line">console.log($(&apos;li:eq(2)&apos;).html());</div><div class="line"></div><div class="line">//当参数为负数时从后边开始查找，最后一个元素为-1</div><div class="line">console.log($(&apos;li:eq(-2)&apos;).html());</div><div class="line"></div><div class="line">//第一个和最后一个元素</div><div class="line">console.log($(&quot;li&quot;).first().html());</div><div class="line">console.log($(&quot;li&quot;).last().html());</div><div class="line"></div><div class="line">console.log(&quot;-------- 内容选择器 ---------&quot;);</div><div class="line">console.log($(&apos;li:contains(&quot;有序&quot;)&apos;));		//查找所有包含&quot;有序&quot;的元素</div><div class="line">console.log($(&apos;li:contains(&quot;有序&quot;)&apos;).html());	</div><div class="line">//会返回查找到的第一个包含&quot;有序&quot;的元素的innerHTML</div><div class="line"></div><div class="line">console.log(&quot;------------ 可见性选择器 -----------&quot;);</div><div class="line">//查找所有可见的指定元素</div><div class="line">console.log($(&apos;li:visible&apos;));</div><div class="line">//查找所有不可见的元素</div><div class="line">console.log($(&apos;li:hidden&apos;));</div><div class="line"></div><div class="line">console.log(&quot;------------ 表单选择器 -----------&quot;);</div><div class="line">//通过type属性查找元素</div><div class="line">console.log($(&apos;:input&apos;));		//获取所有input</div><div class="line">console.log($(&apos;:text&apos;).get(0).placeholder);</div><div class="line"></div><div class="line">console.log(&quot;------------ 表单选择器 -----------&quot;);</div><div class="line">//子元素选择器	支持CSS所有结构伪类选择器 1.9x+ 版本以上</div><div class="line">console.log($(&apos;ul li:first-of-type&apos;).html());			</div><div class="line">//列表1   虽然隐藏了 但是还是在的只是不显示在页面，还可以获取到</div><div class="line">console.log($(&apos;ol li:nth-of-type(3)&apos;).html());			//有序列表3</div></pre></td></tr></table></figure>
+
+            
+        </div>
+        
+    </div>
+    
+    
+    
+</article>
+
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/jQuery笔记/">jQuery笔记</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">近期文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/10/23/jQuery核心及选择器/">jQuery核心及选择器</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">友情链接</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://www.ido321.com" target="_blank">淡忘~浅思</a>
+          </li>
+        
+          <li>
+            <a href="https://dwqs.gitbooks.io/frontenddevhandbook/content/" target="_blank">前端开发手册</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+    
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2016 Xiao Meng<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            .
+            Theme by <a href="https://github.com/dwqs/nx" target="_blank">nx</a>
+        </div>
+    </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<!-- totop end -->
+
+
+
+
+
+<script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>
