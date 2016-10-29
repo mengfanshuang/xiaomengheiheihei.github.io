@@ -148,7 +148,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/JavaScript-面向对象/" style="font-size: 10px;">JavaScript 面向对象</a> <a href="/tags/jQuery笔记/" style="font-size: 10px;">jQuery笔记</a>
+                        <a href="/tags/JavaScript-面向对象/" style="font-size: 10px;">JavaScript 面向对象</a> <a href="/tags/jQuery笔记/" style="font-size: 10px;">jQuery笔记</a> <a href="/tags/跨域-数据获取/" style="font-size: 10px;">跨域 数据获取</a>
                     </div>
                 </section>
                 
@@ -227,6 +227,88 @@
     </div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-跨域的常用四种方式" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/10/29/跨域的常用四种方式/" class="article-date">
+      <time datetime="2016-10-29T02:54:11.000Z" itemprop="datePublished">2016-10-29</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/29/跨域的常用四种方式/">跨域的常用四种方式</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <h2 id="一、通过jsonp跨域"><a href="#一、通过jsonp跨域" class="headerlink" title="一、通过jsonp跨域"></a>一、通过jsonp跨域</h2><ul>
+<li>原理<blockquote>
+<p>由于同源策略的限制，我们不能直接利用ajax来获取不同页面的数据，但是我们可以通过script标签直接引用来自不同域的JS文件，这也正好说明script标签不受同源策略的影响。jsonp正是利用这个原理。</p>
+</blockquote>
+</li>
+<li>实现<blockquote>
+<p>jsonp实现跨域大致可分为以下四步：</p>
+</blockquote>
+</li>
+</ul>
+<ol>
+<li>动态的创建script标签</li>
+<li>拼接callback函数</li>
+<li>拼接普通参数和设置script的src属性后拼接到body后</li>
+<li>在数据加载完成后删除script标签</li>
+</ol>
+<ul>
+<li>注意：</li>
+</ul>
+<ul>
+<li><p>必须记住的是利用jsonp跨域的时候返回的jsonp数据是一个函数调用，在使用之前来定义callback这个函数，然后这个函数可以返回我们想要的数据。</p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/跨域-数据获取/">跨域 数据获取</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/10/29/跨域的常用四种方式/#more">嘿嘿嘿 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-JavaScript面向对象编程" class="article article-type-post" itemscope itemprop="blogPost">
   
